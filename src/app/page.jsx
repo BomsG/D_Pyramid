@@ -21,7 +21,7 @@ const home = () => {
     offset: ["0 1", "1.3"],
   });
   const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.5, 1]);
-  const scaleOpacity = useTransform(scrollYProgress, [0, 1], [0.7, 1]);
+  const scaleOpacity = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
   return (
     <div className="bg-[#F8F8F8]">
       <PageWrapper>
@@ -88,7 +88,7 @@ const home = () => {
           </motion.div>
         </div>
 
-        <Offer />
+        {/* <Offer /> */}
         <div className="mx-28 my-20">
           {/* <Mission /> */}
 
