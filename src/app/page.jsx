@@ -28,7 +28,7 @@ const home = () => {
     offset: ['0 1', '1.3'],
   });
   const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.5, 1]);
-  const scaleOpacity = useTransform(scrollYProgress, [0, 1], [0.7, 1]);
+  const scaleOpacity = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
   return (
     <div className='bg-[#F8F8F8]'>
       <PageWrapper>
@@ -96,6 +96,12 @@ const home = () => {
 
         <div className='mt-[550px]'>
           <Offer />
+        </div>
+
+        <div className='mx-28 my-20'>
+          {/* <Mission /> */}
+
+          <hr className='my-10' />
         </div>
 
         <div className='mt-[140px] px-[100px]'>

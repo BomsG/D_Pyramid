@@ -32,13 +32,13 @@ const page = () => {
           </div>
         </div>
 
-        <div className="my-10 mx-20">
-          <h3 className="text-center text-2xl my-20 font-bold tracking-wide w-[500px] mx-auto">
+        <div className="my-10 mx-5 md:mx-20">
+          <h3 className="text-center text-lg md:text-2xl my-20 font-bold tracking-wide md:w-[500px] mx-auto">
             Providing trendy up to date models of roofing to satisfy customers
           </h3>
         </div>
-        <div className="mx-[150px]">
-          <div className="flex justify-center gap-5 my-10 ">
+        <div className="mx-10 md:mx-[150px]">
+          <div className="md:flex justify-center gap-5 my-10 ">
             <div className="w-full">
               <Image src={hero} alt="hero" className="w-" />
               <p className="my-5 text-sm tracking-wider">
@@ -91,10 +91,14 @@ const page = () => {
             </p>
           </div>
           <div className="grid grid-cols-2 my-20">
-            <Image src={hero4} alt="image" className="h-[400px]" />
-            <Image src={heroo} alt="image" className="h-[400px]" />
-            <Image src={heroo1} alt="image" className="h-[400px]" />
-            <Image src={hero4} alt="image" className="h-[400px]" />
+            <Image src={hero4} alt="image" className="h-[200px] md:h-[400px]" />
+            <Image src={heroo} alt="image" className="h-[200px] md:h-[400px]" />
+            <Image
+              src={heroo1}
+              alt="image"
+              className="h-[200px] md:h-[400px]"
+            />
+            <Image src={hero4} alt="image" className="h-[200px] md:h-[400px]" />
           </div>
           {/* <Offer /> */}
         </div>
