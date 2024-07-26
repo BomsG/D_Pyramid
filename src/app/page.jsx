@@ -107,7 +107,14 @@ const home = () => {
 
         <div className="mt-[140px] px-[100px]">
           <OfferFlex />
+          {/* </div> */}
         </div>
+
+        {/* <div className='mx-28 my-20'>
+          <Mission />
+
+          <hr className='my-10' />
+        </div> */}
 
         <div className="mx-28 my-20">
           <Mission />

@@ -1,0 +1,19 @@
+.custom-next,
+.custom-prev {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.custom-next {
+  right: 10px;
+}
+
+.custom-prev {
+  left: 10px;
+}

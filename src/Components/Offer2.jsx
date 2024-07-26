@@ -25,7 +25,7 @@ const Offer2 = () => {
     },
   ];
   return (
-    <div className='grid grid-cols-3 gap-3 mx-20   my-10 '>
+    <div className='flex justify-between'>
       {item.map((item) => (
         <div className=''>
           <div className='w-80  bg-white rounded-lg shadow-lg'>
