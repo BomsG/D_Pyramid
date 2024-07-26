@@ -94,19 +94,25 @@ const home = () => {
           </motion.div>
         </div>
 
-        <div className='mt-[550px]'>
-          <Offer />
-        </div>
-
-        <div className='mx-28 my-20'>
-          {/* <Mission /> */}
-
-          <hr className='my-10' />
+        <div className='mt-[550px] px-[100px]'>
+          <div className='flex flex-col items-center gap-8'>
+            <h4 className='font-semibold text-4xl'>We offer Immence Quality</h4>
+            <Offer />
+          </div>
         </div>
 
         <div className='mt-[140px] px-[100px]'>
+          {/* <div className='flex flex-col items-center gap-8'> */}
+          <h4 className='font-semibold text-4xl text-center m-8'>What people say about us</h4>
           <OfferFlex />
+          {/* </div> */}
         </div>
+
+        {/* <div className='mx-28 my-20'>
+          <Mission />
+
+          <hr className='my-10' />
+        </div> */}
 
         <div className='mx-28 my-20'>
           <Mission />
