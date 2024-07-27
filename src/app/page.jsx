@@ -2,7 +2,7 @@
 import React, { useRef } from 'react';
 import Footer from '@/Components/Footer';
 import Nav from '../Components/Nav';
-import Gallery from '../app/gallery/page';
+// import Gallery from '../app/gallery/page';
 import Image from 'next/image';
 import bg from '../../public/images/herotrial.jpeg';
 import PageWrapper from '@/Components/PageWrapper';
@@ -127,7 +127,7 @@ export default function Home() {
           </section>
           {/* <!-- feature section //end --> */}
 
-          <Gallery />
+          {/* <Gallery /> */}
 
           <section className='bg-white py-10 md:py-16 md:px-20'>
             <div className='container max-w-screen-xl mx-auto px-4 xl:relative'>
