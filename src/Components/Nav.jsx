@@ -9,7 +9,7 @@ import Link from "next/link";
 import { CiMenuFries } from "react-icons/ci";
 import { MdOutlineRestaurantMenu } from "react-icons/md";
 
-const nav = () => {
+const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -103,4 +103,4 @@ const nav = () => {
   );
 };
 
-export default nav;
+export default Nav;
