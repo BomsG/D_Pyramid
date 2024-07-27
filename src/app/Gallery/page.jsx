@@ -1,3 +1,4 @@
+"use client";
 import React, { useRef } from "react";
 import Nav from "../../Components/Nav";
 import Image from "next/image";
@@ -8,7 +9,7 @@ import img4 from "../../../public/images/heroo1.jpeg";
 import img5 from "../../../public/images/hero4.jpeg";
 import { useScroll, motion, useTransform } from "framer-motion";
 
-const page = () => {
+const Page = () => {
   const ref = useRef();
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -80,4 +81,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
