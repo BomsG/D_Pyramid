@@ -27,7 +27,7 @@ const Offer2 = () => {
   return (
     <div className='flex justify-between'>
       {item.map((item) => (
-        <div className=''>
+        <div className='' key={item.id}>
           <div className='w-80  bg-white rounded-lg shadow-lg'>
             <img
               className='rounded-t-lg w-80 h-46'

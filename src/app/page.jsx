@@ -47,7 +47,8 @@ export default function Home() {
                 </h1>
 
                 <p className='font-normal text-xl text-gray-400 leading-relaxed mb-12'>
-                  Having a sweet home is everyone's dream. Have you <br /> owned your dream house?
+                  Having a sweet home is everyone&apos;s dream. Have you <br /> owned your dream
+                  house?
                 </p>
 
                 <button className='px-6 py-4 bg-[#3D95D1] text-white font-semibold text-lg rounded-xl hover:bg-green-900 transition ease-in-out duration-500'>

@@ -109,10 +109,10 @@ export default function Services() {
                   We are Creative Since 2005
                 </h2>
                 <p className='font-normal text-xl leading-8 text-gray-500 max-lg:text-center max-w-2xl mx-auto'>
-                  Pagedone isn’t just a collection of components and guidelines; it's a philosophy.
-                  We go beyond aesthetics, prioritizing accessibility, scalability, and usability.
-                  Every element, from the tiniest detail to the grandest layout, is meticulously
-                  crafted to enhance functionality and elevate user satisfaction.
+                  Pagedone isn&apos;t just a collection of components and guidelines; it&apos;s a
+                  philosophy. We go beyond aesthetics, prioritizing accessibility, scalability, and
+                  usability. Every element, from the tiniest detail to the grandest layout, is
+                  meticulously crafted to enhance functionality and elevate user satisfaction.
                 </p>
               </div>
             </div>
@@ -139,8 +139,8 @@ export default function Services() {
                 <div className='flex-1'>
                   <h4 className='text-xl text-gray-900 font-semibold mb-2'>Company growth</h4>
                   <p className='text-xs text-gray-500 leading-5'>
-                    Company's remarkable growth journey as we continually innovate and drive towards
-                    new heights of success.
+                    Company&apos;s remarkable growth journey as we continually innovate and drive
+                    towards new heights of success.
                   </p>
                 </div>
               </div>
