@@ -49,7 +49,8 @@ const Nav = () => {
         className='flex justify-between items-center bg-white text-black px-10 py-3 rounded-md xl:relative z-10'
         x-data='{navbarOpen:false}'
       >
-        <Image src={logo} alt='logo' className='w-[20%] md:w-[10%]' />
+        {/* <Image src={logo} alt='logo' className='w-[20%] md:w-[10%]' /> */}
+        <img src='images/logo.png' alt='Logo img' className='w-32 md:-80 lg:w-ful' />
         <ul className='hidden md:flex gap-6 '>
           {li.map((li) => (
             <li
