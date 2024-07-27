@@ -136,7 +136,7 @@ export default function Home() {
               </p>
 
               <h1 className='font-semibold text-gray-900 text-2xl md:text-4xl text-center leading-normal mb-14'>
-                What People Say <br /> About
+                What People Say about us
               </h1>
 
               <div className='hidden xl:block xl:absolute top-0'>
