@@ -1,58 +1,30 @@
+"use client";
+import React, { useRef } from "react";
 import Footer from "@/Components/Footer";
 import Nav from "../Components/Nav";
 import Gallery from "../app/Gallery/page";
 import Image from "next/image";
-import img6 from "../../public/images/bg2.jpeg";
+import bg from "../../public/images/herotrial.jpeg";
 import PageWrapper from "@/Components/PageWrapper";
+import { useScroll, motion, useTransform } from "framer-motion";
+import Link from "next/link";
 
 export default function Home() {
+  const ref = useRef();
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["0 1", "1.3"],
+  });
+  const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.5, 1]);
+  const scaleOpacity = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
   return (
     <PageWrapper>
       <div>
         <div>
           {/* <!-- home section --> */}
-          <section className="bg-white mb-20 md:mb-52 xl:mb-72 px-10 md:px-[100px]">
+          <section className="bg-white mb-20 md:mb-52 xl:mb-72 px-5 md:px-[100px]">
             <div className="container max-w-screen-xl mx-auto px-4">
-              {/* <nav
-              className="flex-wrap lg:flex items-center py-14 xl:relative z-10"
-              x-data="{navbarOpen:false}"
-            >
-              <div className="flex items-center justify-between mb-10 lg:mb-0">
-                <img
-                  src="images/logo.png"
-                  alt="Logo img"
-                  className="w-32 md:-80 lg:w-ful"
-                />
-
-                <button className="lg:hidden w-10 h-10 ml-auto flex items-center justify-center text-[#3D95D1] border border-[#3D95D1] rounded-md">
-                  <i data-feather="menu"></i>
-                </button>
-              </div>
-
-              <ul className="lg:flex flex-col lg:flex-row lg:items-center lg:mx-auto lg:space-x-8 xl:space-x-16">
-                <li className="font-semibold text-gray-900 text-lg hover:text-gray-400 transition ease-in-out duration-300 mb-5 lg:mb-0">
-                  <a href="#">Landing</a>
-                </li>
-
-                <li className="font-semibold text-gray-900 text-lg hover:text-gray-400 transition ease-in-out duration-300 mb-5 lg:mb-0">
-                  <a href="#">Pages</a>
-                </li>
-
-                <li className="font-semibold text-gray-900 text-lg hover:text-gray-400 transition ease-in-out duration-300 mb-5 lg:mb-0">
-                  <a href="#">Contact</a>
-                </li>
-
-                <li className="font-semibold text-gray-900 text-lg hover:text-gray-400 transition ease-in-out duration-300 mb-5 lg:mb-0">
-                  <a href="#">About</a>
-                </li>
-              </ul>
-
-              <button className="px-5 py-3 lg:block border-2 border-[#3D95D1] rounded-lg font-semibold text-[#3D95D1] text-lg hover:bg-[#3D95D1] hover:text-white transition ease-linear duration-500">
-                Request quote
-              </button>
-            </nav> */}
               <Nav />
-
               <div className="flex items-center justify-center xl:justify-start">
                 <div className="mt-28 text-center xl:text-left">
                   <h1 className="font-semibold text-2xl md:text-4xl lg:text-5xl text-gray-900 leading-normal mb-6">
@@ -60,17 +32,19 @@ export default function Home() {
                   </h1>
 
                   <p className="font-normal text-xl text-gray-400 leading-relaxed mb-12">
-                    Our watchword is to provide quality y service and <br />{" "}
-                    customized solution
+                    Our watchword is to provide quality y service and{" "}
+                    <br className="hidden md:block" /> customized solution
                   </p>
-
-                  <button className="px-6 py-4 bg-[#3D95D1] text-white font-semibold text-lg rounded-xl hover:bg-green-900 transition ease-in-out duration-500">
-                    Contact us
-                  </button>
+                  <Link href="/Contact">
+                    <button className="px-6 py-4 bg-[#3D95D1] text-white font-semibold text-lg rounded-xl hover:bg-gray-400 transition ease-in-out duration-500">
+                      Contact us
+                    </button>
+                  </Link>
                 </div>
 
                 <div className="hidden xl:block xl:absolute z-0 top-0 right-0">
-                  <img src="assets/image/home-img.png" alt="Home img" />
+                  {/* <img src="assets/image/home-img.png" alt="Home img" /> */}
+                  <Image src={bg} alt="Home img" />
                 </div>
               </div>
             </div>
@@ -80,7 +54,14 @@ export default function Home() {
 
           {/* <!-- feature section --> */}
           <section className="bg-white py-10 md:py-16 xl:relative">
-            <div className="container max-w-screen-xl mx-auto px-4">
+            <motion.div
+              className="container max-w-screen-xl mx-auto px-4"
+              ref={ref}
+              style={{
+                scale: scaleProgress,
+                opacity: scaleOpacity,
+              }}
+            >
               <div className="flex flex-col xl:flex-row justify-end">
                 <div className="hidden xl:block xl:absolute left-0 bottom-0 w-full">
                   <img src="assets/image/feature-img.png" alt="Feature img" />
@@ -106,10 +87,10 @@ export default function Home() {
 
                     <div className="text-center md:text-left">
                       <h4 className="font-semibold text-gray-900 text-2xl mb-2">
-                        Best Home Guarantee
+                        Best Roof Guarantee
                       </h4>
                       <p className="font-normal text-gray-400 text-xl leading-relaxed">
-                        We guarantees the quality of your home you bought
+                        We guarantees you quality roofing materials
                       </p>
                     </div>
                   </div>
@@ -124,8 +105,7 @@ export default function Home() {
                         Safe Transaction
                       </h4>
                       <p className="font-normal text-gray-400 text-xl leading-relaxed">
-                        Your transactions will always be kept confidential{" "}
-                        <br /> and will get discounted
+                        Your transactions will always be safe and fast
                       </p>
                     </div>
                   </div>
@@ -140,100 +120,21 @@ export default function Home() {
 
                     <div className="text-center md:text-left">
                       <h4 className="font-semibold text-gray-900 text-2xl mb-2">
-                        Low and Cost Home Taxes
+                        Good Customer Service
                       </h4>
                       <p className="font-normal text-gray-400 text-xl leading-relaxed">
-                        By you will get a tax <br /> discount
+                        We proive professionalism, and <br /> good customer
+                        service
                       </p>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
+            </motion.div>
             {/* <!-- container.// --> */}
           </section>
           {/* <!-- feature section //end --> */}
 
-          {/* <section className="bg-white py-10 md:py-16">
-          <div className="container max-w-screen-xl mx-auto px-4">
-            <h1 className="font-semibold text-gray-900 text-4xl text-center mb-10">
-              Our Gallery
-            </h1>
-
-            <div className="hidde md:block flex items-center text-center space-x-10 lg:space-x-20 mb-12">
-              <a
-                href="#"
-                className="px-6 py-2 bg-[#3D95D1] text-white font-semibold text-xl rounded-lg hover:bg-green-600 transition ease-in-out duration-500"
-              >
-                All
-              </a>
-              <a
-                href="#"
-                className="px-6 py-2 text-gray-900 font-normal text-xl rounded-lg hover:bg-gray-200 hover:text-gray-400 transition ease-in-out duration-500"
-              >
-                Exterior
-              </a>
-              <a
-                href="#"
-                className="px-6 py-2 text-gray-900 font-normal text-xl rounded-lg hover:bg-gray-200 hover:text-gray-400 transition ease-in-out duration-500"
-              >
-                Interior
-              </a>
-              <a
-                href="#"
-                className="px-6 py-2 text-gray-900 font-normal text-xl rounded-lg hover:bg-gray-200 hover:text-gray-400 transition ease-in-out duration-500"
-              >
-                Building
-              </a>
-            </div>
-
-            <div className="flex space-x-4 md:space-x-6 lg:space-x-8">
-              <div>
-                <img
-                  src="assets/image/gallery-1.png"
-                  alt="image"
-                  className="mb-4 md:mb-6 lg:mb-8 hover:opacity-75 transition ease-in-out duration-500"
-                />
-                <img
-                  src="assets/image/gallery-4.png"
-                  alt="image"
-                  className="hover:opacity-75 transition ease-in-out duration-500"
-                />
-              </div>
-
-              <div>
-                <img
-                  src="assets/image/gallery-2.png"
-                  alt="image"
-                  className="mb-4 md:mb-6 lg:mb-8 hover:opacity-75 transition ease-in-out duration-500"
-                />
-                <img
-                  src="assets/image/gallery-5.png"
-                  alt="image"
-                  className="mb-3 md:mb-6 lg:mb-8 hover:opacity-75 transition ease-in-out duration-500"
-                />
-                <img
-                  src="assets/image/gallery-6.png"
-                  alt="image"
-                  className="hover:opacity-75 transition ease-in-out duration-500"
-                />
-              </div>
-
-              <div>
-                <img
-                  src="assets/image/gallery-3.png"
-                  alt="image"
-                  className="mb-4 md:mb-6 lg:mb-8 hover:opacity-75 transition ease-in-out duration-500"
-                />
-                <img
-                  src="assets/image/gallery-7.png"
-                  alt="image"
-                  className="hover:opacity-75 transition ease-in-out duration-500"
-                />
-              </div>
-            </div>
-          </div>
-        </section> */}
           <Gallery />
 
           <section className="bg-white py-10 md:py-16 md:px-20">
@@ -254,8 +155,8 @@ export default function Home() {
                 <img src="assets/image/testimoni-2.png" alt="Image" />
               </div>
 
-              <div className="flex flex-col md:flex-row md:items-center justify-center md:space-x-8 lg:space-x-12 mb-10 md:mb-20">
-                <div className="bg-gray-100 rounded-lg mb-10 md:mb-0">
+              <div className="flex flex-col md:flex-row md:items-center justify-center md:space-x-8 lg:space-x-12 mb-10 md:mb-20 mx-5">
+                <div className="bg-gray-100 rounded-lg mb-10 md:mb-0 w-[400px] h-[40%]">
                   <img
                     src="assets/image/testimoni-3.png"
                     alt="Image"
@@ -270,9 +171,10 @@ export default function Home() {
                     <i data-feather="star" className="text-yellow-500"></i>
                   </div>
 
-                  <p className="font-normal text-sm lg:text-md text-gray-400 mx-8 my-8">
-                    I recommend anyone to buy house on I received great customer
-                    service <br /> from the specialists who helped me.
+                  <p className="font-normal text-sm lg:text-md text-gray-400 mx-8 my-8 ">
+                    I recommend anyone to buy their <br /> building materials
+                    here, I received <br /> great customer service <br /> from
+                    the specialists who helped me.
                   </p>
 
                   <h3 className="font-semibold text-gray-900 text-xl md:text-2xl lg:text-3xl mx-8 mb-8">
@@ -280,7 +182,7 @@ export default function Home() {
                   </h3>
                 </div>
 
-                <div className="bg-gray-100 rounded-lg">
+                <div className="bg-gray-100 rounded-lg mb-10 md:mb-0 w-[400px] h-[40%]">
                   <img
                     src="assets/image/testimoni-4.png"
                     alt="Image"
@@ -295,9 +197,9 @@ export default function Home() {
                     <i data-feather="star" className="text-yellow-500"></i>
                   </div>
 
-                  <p className="font-normal text-sm lg:text-md text-gray-400 mx-8 my-8">
-                    is the best property agent in the <br /> world. I received
-                    great customer service <br />
+                  <p className="font-normal text-sm lg:text-md text-gray-400 mx-8 my-8 ">
+                    they are the best people here, here, I <br /> received great
+                    customer service <br /> from the specialists who helped me.
                   </p>
 
                   <h3 className="font-semibold text-gray-900 text-xl md:text-2xl lg:text-3xl mx-8 mb-8">
