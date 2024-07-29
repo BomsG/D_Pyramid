@@ -1,88 +1,176 @@
-"use client";
-import React from "react";
-import Image from "next/image";
-import socials from "../../public/images/socials.jpeg";
-import logo from "../../public/images/logo2.png";
-import { FaFacebook, FaWhatsapp, FaInstagram } from "react-icons/fa";
-import { motion } from "framer-motion";
-import Link from "next/link";
+'use client';
+import React from 'react';
+import Image from 'next/image';
+import socials from '../../public/images/socials.jpeg';
+import logo from '../../public/images/logo2.png';
+import { FaFacebook, FaWhatsapp, FaInstagram } from 'react-icons/fa';
+import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 const Footer = () => {
   const li = [
     {
       id: 1,
-      list: "HOME",
-      link: "/",
+      list: 'HOME',
+      link: '/',
     },
     {
       id: 2,
-      list: "ABOUT US",
-      link: "About",
+      list: 'ABOUT US',
+      link: 'About',
     },
     {
       id: 3,
-      list: "SERVICES",
-      link: "/",
+      list: 'SERVICES',
+      link: '/',
     },
     {
       id: 4,
-      list: "GALLERY",
-      link: "/",
+      list: 'GALLERY',
+      link: '/',
     },
     {
       id: 5,
-      list: "CONTACT US",
-      link: "/",
+      list: 'CONTACT US',
+      link: '/',
     },
   ];
   return (
     <>
-      <div className="h-[200px]  bg-blue-600 text-white flex justify-center items-center">
-        <div className="border border-black flex ">
-          <input
-            type="Email"
-            placeholder="Email Here"
-            className="px-5 py-3 outline-none border-none text-black  "
-          />
-          <button className="px-10 rounded-l-xl">Contact us</button>
-        </div>
-      </div>
-      <div className="bg-black text-gray-300  px-20 py-10 ">
-        <div className="flex justify-around items-center ">
-          <div>
-            <Image src={logo} alt="logo" className="w-[100px] " />
-            <h2 className="text-sm my-5">TEL: +234 916 470 7805</h2>
-            <h2 className="text-2xl font-bold ">Socials</h2>
-            <div className="flex gap-5 mt-5">
-              <FaFacebook />
-              <FaWhatsapp />
-              <FaInstagram />
-            </div>
-          </div>
+      <footer className='bg-gray-100 py-10 md:py-16 mt-80'>
+        <div className='container max-w-screen-xl mx-auto px-4'>
+          <div className='flex flex-col lg:flex-row justify-between'>
+            <div className='text-center lg:text-left mb-10 lg:mb-0'>
+              <div className='flex justify-center lg:justify-start mb-5'>
+                <img src='images/logo.png' alt='Logo img' className='w-32 md:-80 lg:w-ful' />
+              </div>
 
-          <nav className=" py-3 rounded-md">
-            <ul className=" ">
-              {li.map((li) => (
-                <li
-                  key={li.id}
-                  className="text-[15px] font-bold tracking-widest leading-9"
+              <p className='font-light text-gray-400 text-xl mb-10'>Get your dream house with</p>
+
+              <div className='flex items-center justify-center lg:justify-start space-x-5'>
+                <a
+                  href='#'
+                  className='px-3 py-3 bg-gray-200 text-gray-700 rounded-full hover:bg-[#3D95D1] hover:text-white transition ease-in-out duration-500'
                 >
-                  <Link href={li.link}>{li.list}</Link>
-                </li>
-              ))}
-            </ul>
-          </nav>
-          <div>
-            <h2>Email</h2>
-            <div className=" flex gap-5 text-[16px] tracking-wide py-5 ">
-              <button className="bg-blue-600 text-white font-bold px-5 py-2">
-                Get in Touch
-              </button>
-              <button className="border px-5 py-2">Our Services</button>
+                  <i data-feather='facebook'></i>
+                </a>
+
+                <a
+                  href='#'
+                  className='px-3 py-3 bg-gray-200 text-gray-700 rounded-full hover:bg-[#3D95D1] hover:text-white transition ease-in-out duration-500'
+                >
+                  <i data-feather='twitter'></i>
+                </a>
+
+                <a
+                  href='#'
+                  className='px-3 py-3 bg-gray-200 text-gray-700 rounded-full hover:bg-[#3D95D1] hover:text-white transition ease-in-out duration-500'
+                >
+                  <i data-feather='linkedin'></i>
+                </a>
+              </div>
+            </div>
+
+            <div className='text-center lg:text-left mb-10 lg:mb-0'>
+              <h4 className='font-semibold text-gray-900 text-2xl mb-6'>Useful links</h4>
+
+              <a
+                href='#'
+                className='block font-light text-gray-400 text-xl mb-6 hover:text-gray-800 transition ease-in-out duration-300'
+              >
+                Home
+              </a>
+
+              <a
+                href='/services'
+                className='block font-light text-gray-400 text-xl mb-6 hover:text-gray-800 transition ease-in-out duration-300'
+              >
+                Features
+              </a>
+
+              <a
+                href='#'
+                className='block font-light text-gray-400 text-xl mb-6 hover:text-gray-800 transition ease-in-out duration-300'
+              >
+                Gallery
+              </a>
+
+              <a
+                href='/contact'
+                className='block font-light text-gray-400 text-xl mb-6 hover:text-gray-800 transition ease-in-out duration-300'
+              >
+                Book a meeting
+              </a>
+            </div>
+
+            {/* <div className="text-center lg:text-left mb-10 lg:mb-0">
+              <h4 className="font-semibold text-gray-900 text-2xl mb-6">
+                Landing
+              </h4>
+
+              <a
+                href="#"
+                className="block font-light text-gray-400 text-xl mb-6 hover:text-gray-800 transition ease-in-out duration-300"
+              >
+                Mobile App
+              </a>
+
+              <a
+                href="#"
+                className="block font-light text-gray-400 text-xl mb-6 hover:text-gray-800 transition ease-in-out duration-300"
+              >
+                Property
+              </a>
+
+              <a
+                href="#"
+                className="block font-light text-gray-400 text-xl mb-6 hover:text-gray-800 transition ease-in-out duration-300"
+              >
+                Personal Website
+              </a>
+
+              <a
+                href="#"
+                className="block font-light text-gray-400 text-xl mb-6 hover:text-gray-800 transition ease-in-out duration-300"
+              >
+                Web Developer
+              </a>
+
+              <a
+                href="#"
+                className="block font-light text-gray-400 text-xl mb-6 hover:text-gray-800 transition ease-in-out duration-300"
+              >
+                Online Course
+              </a>
+
+              <a
+                href="#"
+                className="block font-light text-gray-400 text-xl mb-6 hover:text-gray-800 transition ease-in-out duration-300"
+              >
+                Donation
+              </a>
+            </div> */}
+
+            <div className='text-center lg:text-left'>
+              <h4 className='font-semibold text-gray-900 text-2xl mb-6'>Utility</h4>
+
+              <a
+                href='#'
+                className='block font-light text-gray-400 text-xl mb-6 hover:text-gray-800 transition ease-in-out duration-300'
+              >
+                FAQ
+              </a>
+
+              <a
+                href='#'
+                className='block font-light text-gray-400 text-xl mb-6 hover:text-gray-800 transition ease-in-out duration-300'
+              >
+                Terms & Conditions
+              </a>
             </div>
           </div>
         </div>
-      </div>
+      </footer>
     </>
   );
 };
