@@ -19,80 +19,77 @@ const Nav = () => {
   const li = [
     {
       id: 1,
-      list: 'HOME',
+      list: 'Home',
       link: '/',
     },
     {
       id: 2,
-      list: 'ABOUT US',
+      list: 'About Us',
       link: '/about',
     },
     {
       id: 3,
-      list: 'SERVICES',
+      list: 'Services',
       link: '/services',
     },
     {
       id: 4,
-      list: 'GALLERY',
+      list: 'Gallery',
       link: '/gallery',
     },
     {
       id: 5,
-      list: 'CONTACT US',
+      list: 'Contact',
       link: '/contact',
     },
   ];
   return (
-    <div className='mt-10'>
-      <nav
-        className='flex justify-between items-center bg-white text-black px-10 py-3 rounded-md xl:relative z-10'
-        x-data='{navbarOpen:false}'
-      >
-        {/* <Image src={logo} alt='logo' className='w-[20%] md:w-[10%]' /> */}
-        <img src='images/logo.png' alt='Logo img' className='w-32 md:-80 lg:w-ful' />
-        <ul className='hidden md:flex gap-6 '>
+    <div className='fixed top-0 md:top-6 w-full bg-yello-500 z-[99] px-0 md:px-4 lg:px-24 xl:px-52 py-2'>
+      <nav className='flex justify-between items-center py-2 px-2 md:px-8 rounded-md bg-white'>
+        <Link href='/' className='logo'>
+          <img src='images/logo.png' alt='Logo img' className='w-32 md:-80 lg:w-ful' />
+        </Link>
+        <ul className='hidden md:flex gap-4 '>
           {li.map((li) => (
             <li
               key={li.id}
-              className='text-[15px] font-bold tracking-widest hover:bg-blue-500 hover:text-white  px-3 py-2 '
+              className='text-[15px] font-medium  hover:bg-blue-500 hover:text-white hover:rounded-md  px-3 py-2 '
             >
-              <motion.div whileHover={{ scale: 1.1 }} transition={{ delay: 0.2 }}>
-                <Link href={li.link}>{li.list}</Link>
-              </motion.div>
+              {/* <motion.div whileHover={{ scale: 1.1 }} transition={{ delay: 0.2 }}> */}
+              <Link href={li.link}>{li.list}</Link>
+              {/* </motion.div> */}
             </li>
           ))}
         </ul>
-        <div className='relative'>
-          <button
-            onClick={toggleMenu}
-            className='flex items-center p-2 text-gray-700 bg-gray-100 rounded-md focus:outline-none '
-          >
-            {isOpen ? (
-              <IoCloseOutline className='w-6 h-6' color='black' />
-            ) : (
-              <CiMenuFries className='w-6 h-6' />
-            )}
-          </button>
 
-          <div
-            className={`absolute right-0 w-48 mt-2 py-2 bg-white border rounded-md shadow-xl ${
-              isOpen ? 'block' : 'hidden'
-            }`}
-          >
-            <ul>
-              {li.map((li) => (
-                <li
-                  key={li.id}
-                  className='text-[15px] font-bold tracking-widest hover:bg-blue-500 hover:text-white  px-3 py-2 '
-                >
-                  <motion.div whileHover={{ scale: 1.1 }} transition={{ delay: 0.2 }}>
-                    <Link href={li.link}>{li.list}</Link>
-                  </motion.div>
-                </li>
-              ))}
-            </ul>
-          </div>
+        <button
+          onClick={toggleMenu}
+          className='flex items-center md:hidden  p-2 text-gray-700 bg-gray-100 rounded-md focus:outline-none '
+        >
+          {isOpen ? (
+            <IoCloseOutline className='w-6 h-6' color='black' />
+          ) : (
+            <CiMenuFries className='w-6 h-6' />
+          )}
+        </button>
+
+        <div
+          className={`absolute md:hidden top-20 right-0 h-screen w-full bg-white ${
+            isOpen ? 'block' : 'hidden'
+          }`}
+        >
+          <ul className='mt-8'>
+            {li.map((li) => (
+              <li
+                key={li.id}
+                className='text-[15px] text-center font-medium tracking-wides hover:bg-blue-500 hover:text-white  px-3 py-3'
+              >
+                {/* <motion.div whileHover={{ scale: 1.1 }} transition={{ delay: 0.2 }}> */}
+                <Link href={li.link}>{li.list}</Link>
+                {/* </motion.div> */}
+              </li>
+            ))}
+          </ul>
         </div>
       </nav>
     </div>

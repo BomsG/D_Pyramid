@@ -1,11 +1,7 @@
 'use client';
 import React from 'react';
-import Image from 'next/image';
-import socials from '../../public/images/socials.jpeg';
-import logo from '../../public/images/logo2.png';
+// import Image from 'next/image';
 import { FaFacebook, FaWhatsapp, FaInstagram } from 'react-icons/fa';
-import { motion } from 'framer-motion';
-import Link from 'next/link';
 
 const Footer = () => {
   const li = [
@@ -37,7 +33,7 @@ const Footer = () => {
   ];
   return (
     <>
-      <footer className='bg-gray-100 py-10 md:py-16 mt-80'>
+      <footer className='bg-gray-100 py-10 md:py-16'>
         <div className='container max-w-screen-xl mx-auto px-4'>
           <div className='flex flex-col lg:flex-row justify-between'>
             <div className='text-center lg:text-left mb-10 lg:mb-0'>
