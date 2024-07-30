@@ -1,4 +1,3 @@
-import Nav from '../../Components/Nav';
 import Image from 'next/image';
 import Simg3 from '../../../public/images/bg.jpeg';
 import Simg1 from '../../../public/images/Simg1.jpeg';
@@ -6,8 +5,6 @@ import Simg2 from '../../../public/images/Simg2.jpeg';
 import Simg4 from '../../../public/images/Simg4.jpeg';
 import Simg5 from '../../../public/images/hero.jpeg';
 import Hero from '../../../public/images/hero4.jpeg';
-// import { SiPushbullet } from "react-icons/si";
-import Footer from '@/Components/Footer';
 import PageWrapper from '@/Components/PageWrapper';
 
 export default function Services() {
@@ -62,7 +59,7 @@ export default function Services() {
         <section className='py-24'>
           <div className='mx-auto max-w-7xl px-4 sm:px-6 lg:px-8'>
             <div className='grid grid-cols-1 lg:grid-cols-3 gap-8'>
-              <a href='javascript:;' className='max-w-[384px] mx-auto'>
+              <a href='#' className='max-w-[384px] mx-auto'>
                 <div className='w-full relative max-w-sm aspect-square'>
                   <h6 className=' absolute bottom-4 left-8 font-medium text-xl leading-8 text-white mb-2 z-20'>
                     Aluminium Roofing Sheets
@@ -72,7 +69,7 @@ export default function Services() {
                 </div>
               </a>
 
-              <a href='javascript:;' className='max-w-[384px] mx-auto'>
+              <a href='#' className='max-w-[384px] mx-auto'>
                 <div className='w-full relative max-w-sm aspect-square'>
                   <h6 className=' absolute bottom-4 left-8 font-medium text-xl leading-8 text-white mb-2 z-20'>
                     Metcopo Aluminium Roofing Sheets
@@ -82,7 +79,7 @@ export default function Services() {
                 </div>
               </a>
 
-              <a href='javascript:;' className='max-w-[384px] mx-auto'>
+              <a href='#' className='max-w-[384px] mx-auto'>
                 <div className='w-full max-w-sm aspect-square relative'>
                   <h6 className=' absolute bottom-4 left-8 font-medium text-xl leading-8 text-white mb-2 z-20'>
                     Currogated Aluminium Roofing Sheets

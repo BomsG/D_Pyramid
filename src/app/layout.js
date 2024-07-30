@@ -1,6 +1,5 @@
 import { Inter, Archivo } from 'next/font/google';
 import './globals.css';
-import Nav2 from '@/Components/Nav2';
 import Nav from '@/Components/Nav';
 import Footer from '@/Components/Footer';
 

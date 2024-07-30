@@ -35,19 +35,19 @@ const Contact = () => {
                   </h1> */}
                     <div className='absolute bottom-0 w-full lg:p-11 p-5'>
                       <div className='bg-white rounded-lg p-6 block'>
-                        <a href='javascript:;' className='flex items-center mb-6'>
+                        <a href='#' className='flex items-center mb-6'>
                           <IoCall size={20} color='blue' />
                           <h5 className='text-black text-base font-normal leading-6 ml-5'>
                             +234 916 470 7805
                           </h5>
                         </a>
-                        <a href='javascript:;' className='flex items-center mb-6'>
+                        <a href='#' className='flex items-center mb-6'>
                           <MdEmail color='blue' size={20} />
                           <h5 className='text-black text-base font-normal leading-6 ml-5'>
-                            Pagedone1234@gmail.com
+                            DPyramid Vision LTD
                           </h5>
                         </a>
-                        <a href='javascript:;' className='flex items-center'>
+                        <a href='#' className='flex items-center'>
                           <CiLocationOn color='blue' size={20} />
                           <h5 className='text-black text-base font-normal leading-6 ml-5'>
                             No C67, Suit A41 MIB Plaza, 1st Avenue Gwarinpa, F.C.T -Abuja.
@@ -105,7 +105,7 @@ const Contact = () => {
                         className='hidden checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100'
                       />
                       <label
-                        for='radio-group-1'
+                        htmlFor='radio-group-1'
                         className='flex items-center cursor-pointer text-gray-500 text-base font-normal leading-6'
                       >
                         <span className='border border-gray-300 rounded-full mr-2 w-4 h-4  ml-2 '></span>{' '}
@@ -120,7 +120,7 @@ const Contact = () => {
                         className='hidden checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100'
                       />
                       <label
-                        for='radio-group-2'
+                        htmlFor='radio-group-2'
                         className='flex items-center cursor-pointer text-gray-500 text-base font-normal leading-6'
                       >
                         <span className='border border-gray-300  rounded-full mr-2 w-4 h-4  ml-2 '></span>{' '}
