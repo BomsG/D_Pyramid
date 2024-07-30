@@ -1,11 +1,11 @@
 'use client';
 import React, { useRef } from 'react';
-import Gallery from '../app/Gallery/page';
 // import Image from 'next/image';
 import PageWrapper from '@/Components/PageWrapper';
 import { useScroll, motion, useTransform } from 'framer-motion';
 import Link from 'next/link';
 import { MdSecurity, MdSupport, MdSupportAgent } from 'react-icons/md';
+import OurGallery from '@/Components/OurGallery';
 
 export default function Home() {
   const ref = useRef();
@@ -122,7 +122,7 @@ export default function Home() {
         </section>
         {/* <!-- feature section //end --> */}
 
-        <Gallery />
+        <OurGallery />
 
         <section className='bg-white py-10 md:py-16 md:px-20'>
           <div className='container max-w-screen-xl mx-auto px-4 xl:relative'>
