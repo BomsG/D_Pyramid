@@ -27,7 +27,7 @@ const Services = () => {
       <h1 className="text-center text-2xl my-10">Services</h1>
       <div className="grid grid-cols-3 gap-2">
         {item.map((item) => (
-          <div id={item.id} className="bg-white shadow-xl px-10 py-3">
+          <div key={item.id} className="bg-white shadow-xl px-10 py-3">
             <h2 className="text-[14px] font-bold mb-5 tracking-wider">
               {item.name}
             </h2>
