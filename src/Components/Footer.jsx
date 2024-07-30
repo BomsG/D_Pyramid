@@ -5,33 +5,33 @@ import React from 'react';
 import { FaFacebook, FaWhatsapp, FaInstagram } from 'react-icons/fa';
 
 const Footer = () => {
-  const li = [
-    {
-      id: 1,
-      list: 'HOME',
-      link: '/',
-    },
-    {
-      id: 2,
-      list: 'ABOUT US',
-      link: 'About',
-    },
-    {
-      id: 3,
-      list: 'SERVICES',
-      link: '/',
-    },
-    {
-      id: 4,
-      list: 'GALLERY',
-      link: '/',
-    },
-    {
-      id: 5,
-      list: 'CONTACT US',
-      link: '/',
-    },
-  ];
+  // const li = [
+  //   {
+  //     id: 1,
+  //     list: 'HOME',
+  //     link: '/',
+  //   },
+  //   {
+  //     id: 2,
+  //     list: 'ABOUT US',
+  //     link: 'About',
+  //   },
+  //   {
+  //     id: 3,
+  //     list: 'SERVICES',
+  //     link: '/',
+  //   },
+  //   {
+  //     id: 4,
+  //     list: 'GALLERY',
+  //     link: '/',
+  //   },
+  //   {
+  //     id: 5,
+  //     list: 'CONTACT US',
+  //     link: '/',
+  //   },
+  // ];
   return (
     <>
       <footer className='bg-[#1e1e1e] px-0 md:px-4 lg:px-24 xl:px-52 py-10 md:py-16 [&_p]:text-white [&_a]:text-white [&_p]:text-[16px] [&_a]:text-[16px]'>

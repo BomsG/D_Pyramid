@@ -39,7 +39,7 @@ export default function Home() {
                   Our watchword is to provide quality y service and{' '}
                   <br className='hidden md:block' /> customized solution
                 </p>
-                <Link href='/Contact'>
+                <Link href='/contact'>
                   <button className='px-6 py-4 bg-[#3D95D1] text-white font-semibold text-lg rounded-xl hover:bg-gray-400 transition ease-in-out duration-500'>
                     Contact us
                   </button>

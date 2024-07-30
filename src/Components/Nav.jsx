@@ -42,7 +42,7 @@ const Nav = () => {
     },
   ];
   return (
-    <div className='fixed top-0 md:top-6 w-full bg-yello-500 z-[99] px-0 md:px-4 lg:px-24 xl:px-52 py-2'>
+    <div className='fixed top-0 md:top-6 w-screen bg-yello-500 z-[99] px-0 md:px-4 lg:px-24 xl:px-52 py-2'>
       <nav className='flex justify-between items-center py-2 px-2 md:px-8 rounded-md bg-white'>
         <Link href='/' className='logo'>
           <Image
