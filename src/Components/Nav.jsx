@@ -60,7 +60,7 @@ const Nav = () => {
           {li.map((al) => (
             <Link href={al.link} key={al.id}>
               <li
-                // className='text-[15px] font-medium  hover:bg-blue-500 hover:text-white hover:rounded-md  px-3 py-2 '
+                // className='text-[15px] font-medium  hover:bg-blue-500 hover:text-white hover:rounded-md  px-3 py-2 remove this oncey you confirm'
                 className={`text-[15px] font-medium px-3 py-2 ${
                   activeLink === al.id
                     ? 'bg-blue-100 text-white rounded-md'
