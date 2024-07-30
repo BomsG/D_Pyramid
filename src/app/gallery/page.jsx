@@ -1,4 +1,4 @@
-import OurGallery from '@/Components/OurGallery';
+import OurGallery from '@/components/OurGallery';
 
 export default function Gallery() {
   return (

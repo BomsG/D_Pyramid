@@ -1,5 +1,5 @@
-import PageWrapper from '@/Components/PageWrapper';
-import Nav from '../../Components/Nav';
+import PageWrapper from '@/components/PageWrapper';
+import Nav from '../../components/Nav';
 import { CiLocationOn } from 'react-icons/ci';
 import { IoCall } from 'react-icons/io5';
 import { MdEmail } from 'react-icons/md';

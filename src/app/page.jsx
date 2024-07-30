@@ -1,11 +1,11 @@
 'use client';
 import React, { useRef } from 'react';
 // import Image from 'next/image';
-import PageWrapper from '@/Components/PageWrapper';
+import PageWrapper from '@/components/PageWrapper';
 import { useScroll, motion, useTransform } from 'framer-motion';
 import Link from 'next/link';
 import { MdSecurity, MdSupport, MdSupportAgent } from 'react-icons/md';
-import OurGallery from '@/Components/OurGallery';
+import OurGallery from '@/components/OurGallery';
 
 export default function Home() {
   const ref = useRef();

@@ -1,6 +1,6 @@
 import React from 'react';
-import Nav from '../../Components/Nav';
-import PageWrapper from '@/Components/PageWrapper';
+import Nav from '../../components/Nav';
+import PageWrapper from '@/components/PageWrapper';
 import Image from 'next/image';
 import hero from '../../../public/images/hero4.jpeg';
 import hero2 from '../../../public/images/hero.jpeg';
@@ -10,8 +10,8 @@ import heroo1 from '../../../public/images/heroo1.jpeg';
 import vision from '../../../public/images/aboutHero.jpeg';
 import bg from '../../../public/images/hero4.jpeg';
 import logo from '../../../public/images/logo2.png';
-import Offer from '@/Components/Offer';
-import Footer from '@/Components/Footer';
+import Offer from '@/components/Offer';
+import Footer from '@/components/Footer';
 
 const page = () => {
   return (

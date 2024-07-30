@@ -5,7 +5,7 @@ import Simg2 from '../../../public/images/Simg2.jpeg';
 import Simg4 from '../../../public/images/Simg4.jpeg';
 import Simg5 from '../../../public/images/hero.jpeg';
 import Hero from '../../../public/images/hero4.jpeg';
-import PageWrapper from '@/Components/PageWrapper';
+import PageWrapper from '@/components/PageWrapper';
 
 export default function Services() {
   const item = [
