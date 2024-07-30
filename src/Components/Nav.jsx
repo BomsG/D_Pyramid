@@ -52,9 +52,8 @@ const Nav = () => {
         </Link>
         <ul className='hidden md:flex gap-4 '>
           {li.map((al) => (
-            <Link href={al.link}>
+            <Link href={al.link} key={al.id}>
               <li
-                key={al.id}
                 // className='text-[15px] font-medium  hover:bg-blue-500 hover:text-white hover:rounded-md  px-3 py-2 '
                 className={`text-[15px] font-medium px-3 py-2 ${
                   activeLink === al.id
