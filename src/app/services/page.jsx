@@ -86,9 +86,6 @@ export default function Services() {
                   </h6>
                   <div className='bg-black absolute bottom-0 h-20 rounded-b-xl w-full opacity-25 z-10'></div>
                   <Image src={Simg2} alt='image' className='h-[400px] rounded-xl' />
-                  {/* <span className='py-1 min-[400px]:py-2 px-2 min-[400px]:px-4 cursor-pointer rounded-lg bg-gradient-to-tr from-indigo-600 to-purple-600 font-medium text-base leading-7 text-white absolute top-3 right-3 z-10'>
-                  20% Off
-                </span> */}
                 </div>
               </a>
             </div>
