@@ -1,4 +1,5 @@
 'use client';
+import Image from 'next/image';
 import React from 'react';
 // import Image from 'next/image';
 import { FaFacebook, FaWhatsapp, FaInstagram } from 'react-icons/fa';
@@ -38,7 +39,14 @@ const Footer = () => {
           <div className='flex flex-col lg:flex-row justify-between'>
             <div className='text-center lg:text-left mb-10 lg:mb-0'>
               <div className='flex justify-center lg:justify-start mb-5'>
-                <img src='images/logo2.png' alt='Logo img' className='w-32 md:-80 lg:w-ful' />
+                {/* <img src='images/logo2.png' alt='Logo img' className='w-32 md:-80 lg:w-ful' /> */}
+                <Image
+                  src='/images/logo2.png'
+                  alt='Logo img'
+                  // className='w-32 md:-80 lg:w-ful'
+                  width={128}
+                  height={46}
+                />
               </div>
 
               <p className='font-light text-gray-400 text-xl mb-10'>Get your dream house with</p>
@@ -106,42 +114,21 @@ const Footer = () => {
                 href='#'
                 className='block font-light text-gray-400 text-xl mb-6 hover:text-gray-800 transition ease-in-out duration-300'
               >
-                Mobile App
+                Facebook
               </a>
 
               <a
                 href='#'
                 className='block font-light text-gray-400 text-xl mb-6 hover:text-gray-800 transition ease-in-out duration-300'
               >
-                Property
+                Instagram
               </a>
 
               <a
                 href='#'
                 className='block font-light text-gray-400 text-xl mb-6 hover:text-gray-800 transition ease-in-out duration-300'
               >
-                Personal Website
-              </a>
-
-              <a
-                href='#'
-                className='block font-light text-gray-400 text-xl mb-6 hover:text-gray-800 transition ease-in-out duration-300'
-              >
-                Web Developer
-              </a>
-
-              <a
-                href='#'
-                className='block font-light text-gray-400 text-xl mb-6 hover:text-gray-800 transition ease-in-out duration-300'
-              >
-                Online Course
-              </a>
-
-              <a
-                href='#'
-                className='block font-light text-gray-400 text-xl mb-6 hover:text-gray-800 transition ease-in-out duration-300'
-              >
-                Donation
+                Linkedin
               </a>
             </div>
 

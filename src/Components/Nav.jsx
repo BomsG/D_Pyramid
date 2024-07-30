@@ -53,7 +53,7 @@ const Nav = () => {
             alt='Logo img'
             // className='w-32 md:-80 lg:w-ful'
             width={128}
-            height={40}
+            height={46}
           />
         </Link>
         <ul className='hidden md:flex gap-4 '>
