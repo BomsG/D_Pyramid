@@ -39,7 +39,7 @@ const Nav = () => {
     {
       id: 5,
       list: "Contact",
-      link: "/contact",
+      link: " https://wa.me/+2349164707805?text=I'm interested in your service",
     },
   ];
   return (
@@ -49,7 +49,6 @@ const Nav = () => {
           <Image
             src="/images/logo.png"
             alt="Logo img"
-            // className='w-32 md:-80 lg:w-ful'
             width={128}
             height={46}
           />

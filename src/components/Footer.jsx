@@ -5,35 +5,10 @@ import React from "react";
 import { FaFacebook, FaWhatsapp, FaInstagram } from "react-icons/fa";
 import { MdOutlineMailOutline } from "react-icons/md";
 import { IoLocationSharp, IoCall } from "react-icons/io5";
+import WhatsAppLink from "./whatsappLink";
+import Link from "next/link";
 
 const Footer = () => {
-  // const li = [
-  //   {
-  //     id: 1,
-  //     list: 'HOME',
-  //     link: '/',
-  //   },
-  //   {
-  //     id: 2,
-  //     list: 'ABOUT US',
-  //     link: 'About',
-  //   },
-  //   {
-  //     id: 3,
-  //     list: 'SERVICES',
-  //     link: '/',
-  //   },
-  //   {
-  //     id: 4,
-  //     list: 'GALLERY',
-  //     link: '/',
-  //   },
-  //   {
-  //     id: 5,
-  //     list: 'CONTACT US',
-  //     link: '/',
-  //   },
-  // ];
   return (
     <>
       <footer className="!bg-[#1e1e1e] px-5 md:px-4 lg:px-24 xl:px-30 py-10 md:py-16 [&_p]:text-white [&_a]:text-white [&_p]:text-[16px] [&_a]:text-[16px]">
@@ -41,11 +16,9 @@ const Footer = () => {
           <div className="flex flex-col lg:flex-row justify-between gap-20">
             <div className=" text-left mb-10 lg:mb-0">
               <div className="flex justify-start mb-5">
-                {/* <img src='images/logo2.png' alt='Logo img' className='w-32 md:-80 lg:w-ful' /> */}
                 <Image
                   src="/images/logo2.png"
                   alt="Logo img"
-                  // className='w-32 md:-80 lg:w-ful'
                   width={128}
                   height={46}
                 />
@@ -57,7 +30,7 @@ const Footer = () => {
 
               <div className="flex items-center  justify-start space-x-5">
                 <a
-                  href="#"
+                  href={` https://wa.me/+2349164707805?text=I'm interested in your service`}
                   className="px-3 py-3 bg-gray-200 text-gray-700 rounded-full hover:bg-[#3D95D1] hover:text-white transition ease-in-out duration-500"
                 >
                   <FaWhatsapp color="black" />

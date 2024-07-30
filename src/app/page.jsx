@@ -16,6 +16,7 @@ export default function Home() {
   });
   const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.5, 1]);
   const scaleOpacity = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
+
   return (
     <PageWrapper>
       <div className="">
@@ -42,7 +43,8 @@ export default function Home() {
                   Our watchword is to provide quality y service and{" "}
                   <br className="hidden md:block" /> customized solution
                 </p>
-                <Link href="/contact">
+
+                <Link href={` https://wa.me/+2349164707805?text=hello`}>
                   <button className="px-6 py-4 bg-[#3D95D1] text-white font-semibold text-lg rounded-xl hover:bg-gray-400 transition ease-in-out duration-500">
                     Contact us
                   </button>
@@ -64,7 +66,11 @@ export default function Home() {
           >
             <div className="flex flex-col xl:flex-row justify-end">
               <div className="hidden xl:block xl:absolute left-0 bottom-0 w-full">
-                <img src="assets/image/feature-img.png" alt="Feature img" />
+                <img
+                  src="assets/image/feature-img2.png"
+                  alt="Feature img"
+                  className="w-[600px] h-[800px] object-fit"
+                />
               </div>
 
               <div className="">
@@ -125,157 +131,9 @@ export default function Home() {
               </div>
             </div>
           </motion.div>
-          {/* <!-- container.// --> */}
         </section>
-        {/* <!-- feature section //end --> */}
 
         <Services />
-
-        {/* <section className="bg-white py-10 md:py-16 md:px-20">
-          <div className="container max-w-screen-xl mx-auto px-4 xl:relative">
-            <p className="font-normal text-gray-400 text-lg md:text-xl text-center uppercase mb-6">
-              Testimonial
-            </p>
-
-            <h1 className="font-semibold text-gray-900 text-2xl md:text-4xl text-center leading-normal mb-14">
-              What People Say <br /> About
-            </h1>
-
-            <div className="hidden xl:block xl:absolute top-0">
-              <img src="assets/image/testimoni-1.png" alt="Image" />
-            </div>
-
-            <div className="hidden xl:block xl:absolute top-32">
-              <img src="assets/image/testimoni-2.png" alt="Image" />
-            </div>
-
-            <div className="flex flex-col md:flex-row md:items-center justify-center md:space-x-8 lg:space-x-12 mb-10 md:mb-20 mx-5">
-              <div className="bg-gray-100 rounded-lg mb-10 md:mb-0 w-[400px] h-[40%]">
-                <img
-                  src="assets/image/testimoni-3.png"
-                  alt="Image"
-                  className="mx-8 my-8"
-                />
-
-                <div className="flex items-center gap-5 mx-8">
-                  <i data-feather="star" className="text-yellow-500"></i>
-                  <i data-feather="star" className="text-yellow-500"></i>
-                  <i data-feather="star" className="text-yellow-500"></i>
-                  <i data-feather="star" className="text-yellow-500"></i>
-                  <i data-feather="star" className="text-yellow-500"></i>
-                </div>
-
-                <p className="font-normal text-sm lg:text-md text-gray-400 mx-8 my-8 ">
-                  I recommend anyone to buy their <br /> building materials
-                  here, I received <br /> great customer service <br /> from the
-                  specialists who helped me.
-                </p>
-
-                <h3 className="font-semibold text-gray-900 text-xl md:text-2xl lg:text-3xl mx-8 mb-8">
-                  Brooklyn Simmons
-                </h3>
-              </div>
-
-              <div className="bg-gray-100 rounded-lg mb-10 md:mb-0 w-[400px] h-[40%]">
-                <img
-                  src="assets/image/testimoni-4.png"
-                  alt="Image"
-                  className="mx-8 my-8"
-                />
-
-                <div className="flex items-center gap-5 mx-8">
-                  <i data-feather="star" className="text-yellow-500"></i>
-                  <i data-feather="star" className="text-yellow-500"></i>
-                  <i data-feather="star" className="text-yellow-500"></i>
-                  <i data-feather="star" className="text-yellow-500"></i>
-                  <i data-feather="star" className="text-yellow-500"></i>
-                </div>
-
-                <p className="font-normal text-sm lg:text-md text-gray-400 mx-8 my-8 ">
-                  they are the best people here, here, I <br /> received great
-                  customer service <br /> from the specialists who helped me.
-                </p>
-
-                <h3 className="font-semibold text-gray-900 text-xl md:text-2xl lg:text-3xl mx-8 mb-8">
-                  Ralph Edwards
-                </h3>
-              </div>
-            </div>
-          </div>
-        </section> */}
-
-        {/* <section className='bg-white py-10 md:py-16'>
-        <div className='container max-w-screen-xl mx-auto px-4 xl:relative'>
-          <div className='bg-[#3D95D1] flex flex-col lg:flex-row items-center justify-evenly py-14 rounded-3xl'>
-            <div className='text-center lg:text-left mb-10 lg:mb-0'>
-              <h1 className='font-semibold text-white text-4xl md:text-5xl lg:text-7xl leading-normal mb-4'>
-                Talk to us <br /> to discuss
-              </h1>
-
-              <p className='font-normal text-white text-md md:text-xl'>
-                Need more time to discuss? Won’t worry, we are <br /> ready to help you. You can
-                fill in the column on the <br /> right to book a meeting with us. Totally free.
-              </p>
-            </div>
-
-            <div className='hidden xl:block xl:absolute right-0'>
-              <img src='assets/image/book.png' alt='Image' />
-            </div>
-
-            <div className='hidden md:block bg-white xl:relative px-6 py-3 rounded-3xl'>
-              <div className='py-3'>
-                <h3 className='font-semibold text-gray-900 text-3xl'>Book a meeting</h3>
-              </div>
-
-              <div className='py-3'>
-                <input
-                  type='text'
-                  placeholder='Full Name'
-                  className='px-4 py-4 w-96 bg-gray-100 placeholder-gray-400 rounded-xl outline-none'
-                />
-              </div>
-
-              <div className='py-3'>
-                <input
-                  type='text'
-                  placeholder='Email'
-                  className='px-4 py-4 w-96 bg-gray-100 placeholder-gray-400 rounded-xl outline-none'
-                />
-              </div>
-
-              <div className='py-3 relative'>
-                <input
-                  type='text'
-                  placeholder='Date'
-                  className='px-4 py-4 w-96 bg-gray-100 font-normal text-lg placeholder-gray-400 rounded-xl outline-none'
-                />
-
-                <div className='absolute inset-y-0 left-80 ml-6 flex items-center text-xl text-gray-600'>
-                  <i data-feather='calendar'></i>
-                </div>
-              </div>
-
-              <div className='py-3 relative'>
-                <input
-                  type='text'
-                  placeholder='Virtual Meeting'
-                  className='px-4 py-4 w-96 bg-gray-100 placeholder-gray-400 rounded-xl outline-none'
-                />
-
-                <div className='absolute inset-y-0 left-80 ml-6 flex items-center text-xl text-gray-600'>
-                  <i data-feather='chevron-down'></i>
-                </div>
-              </div>
-
-              <div className='py-3'>
-                <button className='w-full py-4 font-semibold text-lg text-white bg-[#3D95D1] rounded-xl hover:bg-green-900 transition ease-in-out duration-500'>
-                  Booking
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
       </div>
     </PageWrapper>
   );
