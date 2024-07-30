@@ -6,14 +6,15 @@ import Image from "next/image";
 import Link from "next/link";
 import { CiMenuFries } from "react-icons/ci";
 import { IoCloseOutline } from "react-icons/io5";
+import { motion } from "framer-motion";
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [activeLink, setActiveLink] = useState(null);
 
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
+  const toggleMenu = () => setIsOpen(!isOpen);
+
+  const closeMenu = () => setIsOpen(false);
   const li = [
     {
       id: 1,
@@ -57,7 +58,6 @@ const Nav = () => {
           {li.map((al) => (
             <Link href={al.link} key={al.id}>
               <li
-                // className='text-[15px] font-medium  hover:bg-blue-500 hover:text-white hover:rounded-md  px-3 py-2 remove this oncey you confirm'
                 className={`text-[15px] font-medium px-3 py-2 ${
                   activeLink === al.id
                     ? " text-blue-500 rounded-md"
@@ -65,9 +65,12 @@ const Nav = () => {
                 }`}
                 onClick={() => setActiveLink(al.id)}
               >
-                {/* <motion.div whileHover={{ scale: 1.1 }} transition={{ delay: 0.2 }}> */}
-                {al.list}
-                {/* </motion.div> */}
+                <motion.div
+                  whileHover={{ scale: 1.1 }}
+                  transition={{ delay: 0.2 }}
+                >
+                  {al.list}
+                </motion.div>
               </li>
             </Link>
           ))}
@@ -93,11 +96,16 @@ const Nav = () => {
             {li.map((li) => (
               <li
                 key={li.id}
-                className="text-[15px] text-center font-medium tracking-wides hover:bg-blue-500 hover:text-white  px-3 py-3"
+                onClick={closeMenu}
+                className="text-[15px] text-center font-medium tracking-wide hover:bg-blue-500 hover:text-white  px-3 py-3"
               >
-                {/* <motion.div whileHover={{ scale: 1.1 }} transition={{ delay: 0.2 }}> */}
-                <Link href={li.link}>{li.list}</Link>
-                {/* </motion.div> */}
+                <motion.div
+                  whileHover={{ scale: 1.1 }}
+                  transition={{ delay: 0.4 }}
+                >
+                  {" "}
+                  <Link href={li.link}>{li.list}</Link>
+                </motion.div>
               </li>
             ))}
           </ul>

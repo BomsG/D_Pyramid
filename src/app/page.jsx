@@ -20,7 +20,7 @@ export default function Home() {
     <PageWrapper>
       <div className="">
         <section
-          className="w-full h-[100vh] md:h-[100vh] backdrop-blur-sm  "
+          className="w-full h-[80vh] md:h-[100vh] backdrop-blur-sm  "
           style={{
             backgroundImage: "url('/images/Simg3.png')",
             backgroundSize: "cover",
@@ -34,7 +34,7 @@ export default function Home() {
           <div className="w-full pt-[10rem] md:pt-[15rem] px-2 md:px-52 ">
             <div className="flex items-center justify-center xl:justify-start">
               <div className="text-center xl:text-left">
-                <h1 className="font-semibold text-3xl md:text-4xl lg:text-6xl text-white leading-normal mb-3 md:mb-6 ">
+                <h1 className="font-semibold text-3xl md:text-4xl lg:text-6xl text-white leading-normal mb-3 md:mb-6  ">
                   Endless Choices <br /> Of Roofing With Us
                 </h1>
 
@@ -130,8 +130,6 @@ export default function Home() {
         {/* <!-- feature section //end --> */}
 
         <Services />
-
-        <OurGallery />
 
         {/* <section className="bg-white py-10 md:py-16 md:px-20">
           <div className="container max-w-screen-xl mx-auto px-4 xl:relative">
