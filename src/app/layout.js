@@ -1,7 +1,7 @@
 import { Inter, Archivo } from 'next/font/google';
 import './globals.css';
-import Nav from '@/Components/Nav';
-import Footer from '@/Components/Footer';
+import Nav from '@/components/Nav';
+import Footer from '@/components/Footer';
 
 const archivo = Archivo({ subsets: ['latin'] });
 
