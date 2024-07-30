@@ -12,6 +12,7 @@ import { IoCloseOutline } from 'react-icons/io5';
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [activeLink, setActiveLink] = useState(null);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -50,15 +51,23 @@ const Nav = () => {
           <img src='images/logo.png' alt='Logo img' className='w-32 md:-80 lg:w-ful' />
         </Link>
         <ul className='hidden md:flex gap-4 '>
-          {li.map((li) => (
-            <li
-              key={li.id}
-              className='text-[15px] font-medium  hover:bg-blue-500 hover:text-white hover:rounded-md  px-3 py-2 '
-            >
-              {/* <motion.div whileHover={{ scale: 1.1 }} transition={{ delay: 0.2 }}> */}
-              <Link href={li.link}>{li.list}</Link>
-              {/* </motion.div> */}
-            </li>
+          {li.map((al) => (
+            <Link href={al.link}>
+              <li
+                key={al.id}
+                // className='text-[15px] font-medium  hover:bg-blue-500 hover:text-white hover:rounded-md  px-3 py-2 '
+                className={`text-[15px] font-medium px-3 py-2 ${
+                  activeLink === al.id
+                    ? 'bg-blue-100 text-white rounded-md'
+                    : 'hover:bg-blue-500 hover:text-white hover:rounded-md'
+                }`}
+                onClick={() => setActiveLink(al.id)}
+              >
+                {/* <motion.div whileHover={{ scale: 1.1 }} transition={{ delay: 0.2 }}> */}
+                {al.list}
+                {/* </motion.div> */}
+              </li>
+            </Link>
           ))}
         </ul>
 

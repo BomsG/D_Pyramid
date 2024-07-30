@@ -33,7 +33,7 @@ const Footer = () => {
   ];
   return (
     <>
-      <footer className='bg-[#1e1e1e] py-10 md:py-16 [&_p]:text-white [&_a]:text-white [&_p]:text-[16px] [&_a]:text-[16px]'>
+      <footer className='bg-[#1e1e1e] px-0 md:px-4 lg:px-24 xl:px-52 py-10 md:py-16 [&_p]:text-white [&_a]:text-white [&_p]:text-[16px] [&_a]:text-[16px]'>
         <div className='container max-w-screen-xl mx-auto px-4'>
           <div className='flex flex-col lg:flex-row justify-between'>
             <div className='text-center lg:text-left mb-10 lg:mb-0'>

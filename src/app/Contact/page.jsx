@@ -131,7 +131,7 @@ const Contact = () => {
                 </div>
 
                 <div className='py-3'>
-                  <button className='w-full py-4 font-semibold text-lg text-white bg-[#3D95D1] rounded-xl hover:bg-green-900 transition ease-in-out duration-500'>
+                  <button className='w-full py-4 font-semibold text-lg text-white bg-[#3D95D1] rounded-xl hover:bg-blue-500 transition ease-in-out duration-500'>
                     Booking
                   </button>
                 </div>
