@@ -16,23 +16,38 @@ import Footer from '@/Components/Footer';
 const page = () => {
   return (
     <PageWrapper>
-      <div className=' bg-[#F8F8F8] '>
-        <div className='bg-gray-900'>
+      <div className='mt-32'>
+        {/* <div className='bg-gray-900'>
           <div
-            className=' bg-cover bg-center opacity-40 w-full h-[80vh] blur-sm '
+            className=' bg-cover bg-center opacity-40 w-full h-[40vh] blur-sm '
             style={{ backgroundImage: `url(${bg.src})` }}
-          ></div>
+          >
+            <div className='absolute  bg-opacity-50 px-20 py-10 h-[500px]'>
+              <h3>About Us</h3>
+            </div>
+          </div>
           <div className='absolute inset-0  bg-opacity-50 px-20 py-10 h-[500px]'>
             <Nav />
             <Image src={logo} alt='logo' className='w-[300px] mx-auto my-[100px] ' />
           </div>
-        </div>
+        </div> */}
 
-        <div className='my-10 mx-5 md:mx-20'>
+        <section className=' py-10 md:py-16'>
+          <div className='container max-w-screen-xl mx-auto px-4 xl:relative'>
+            <h1 className='font-semibold text-gray-900 text-2xl md:text-4xl text-center leading-normal mb-2'>
+              About Us
+            </h1>
+            <p className='font-normal text-gray-400 text-lg md:text-xl text-center mb-6'>
+              Providing trendy up to date models of roofing to satisfy customers
+            </p>
+          </div>
+        </section>
+
+        {/* <div className='my-10 mx-5 md:mx-20'>
           <h3 className='text-center text-lg md:text-2xl my-20 font-bold tracking-wide md:w-[500px] mx-auto'>
             Providing trendy up to date models of roofing to satisfy customers
           </h3>
-        </div>
+        </div> */}
         <div className='mx-10 md:mx-[150px]'>
           <div className='md:flex justify-center gap-5 my-10 '>
             <div className='w-full'>
@@ -88,7 +103,6 @@ const page = () => {
           {/* <Offer /> */}
         </div>
       </div>
-      <Footer />
     </PageWrapper>
   );
 };

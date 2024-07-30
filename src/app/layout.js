@@ -14,7 +14,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang='en'>
-      <body className={archivo.className}>
+      <body className={`${archivo.className} bg-[#f8f8f8]`}>
         <Nav />
         {children}
         <Footer />

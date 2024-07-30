@@ -7,8 +7,8 @@ import { MdEmail } from 'react-icons/md';
 const Contact = () => {
   return (
     <PageWrapper>
-      <div className='mt-32'>
-        <section className='bg-white py-10 md:py-16'>
+      <div className='mt-32 mb-32'>
+        <section className='py-10 md:py-16'>
           <div className='container max-w-screen-xl mx-auto px-4 xl:relative'>
             <h1 className='font-semibold text-gray-900 text-2xl md:text-4xl text-center leading-normal mb-2'>
               Contact Us

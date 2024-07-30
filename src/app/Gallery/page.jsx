@@ -9,7 +9,7 @@ import img4 from '../../../public/images/heroo1.jpeg';
 import img5 from '../../../public/images/hero4.jpeg';
 import { useScroll, motion, useTransform } from 'framer-motion';
 
-const Page = () => {
+export default function Gallery() {
   const ref = useRef();
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -17,10 +17,22 @@ const Page = () => {
   });
   const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.7, 1]);
   const scaleOpacity = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
+
   return (
-    <section className='bg-white py-10 md:py-16 md:px-2'>
+    <section className='mt-32 py-10 md:py-16 md:px-2'>
       <div className='container max-w-screen-xl mx-auto px-4'>
-        <h1 className='font-semibold text-gray-900 text-4xl text-center'>Our Gallery</h1>
+        {/* <h1 className='font-semibold text-gray-900 text-4xl text-center'>Our Gallery</h1> */}
+
+        <section className='py-10 md:py-16'>
+          <div className='container max-w-screen-xl mx-auto px-4 xl:relative'>
+            <h1 className='font-semibold text-gray-900 text-2xl md:text-4xl text-center leading-normal mb-2'>
+              Our Gallery
+            </h1>
+            <p className='font-normal text-gray-400 text-lg md:text-xl text-center mb-6'>
+              We&apos;re exceptional at what we do
+            </p>
+          </div>
+        </section>
 
         <motion.div
           className='flex space-x-4 md:space-x-6 lg:space-x-8'
@@ -77,6 +89,4 @@ const Page = () => {
       </div>
     </section>
   );
-};
-
-export default Page;
+}

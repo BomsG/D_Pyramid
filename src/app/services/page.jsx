@@ -47,58 +47,20 @@ export default function Services() {
   ];
   return (
     <PageWrapper>
-      <div>
-        <section className='bg-white llmb-20 llmd:mb-52 llxl:mb-72'>
-          <div className='container max-w-screen-xl mx-auto px-4'>
-            {/* <nav
-            className="flex-wrap lg:flex items-center py-14 xl:relative z-10"
-            x-data="{navbarOpen:false}"
-          >
-            <div className="flex items-center justify-between mb-10 lg:mb-0">
-              <img
-                src="images/logo.png"
-                alt="Logo img"
-                className="w-32 md:-80 lg:w-ful"
-              />
-
-              <button className="lg:hidden w-10 h-10 ml-auto flex items-center justify-center text-[#3D95D1] border border-[#3D95D1] rounded-md">
-                <i data-feather="menu"></i>
-              </button>
-            </div>
-
-            <ul className="lg:flex flex-col lg:flex-row lg:items-center lg:mx-auto lg:space-x-8 xl:space-x-16">
-              <li className="font-semibold text-gray-900 text-lg hover:text-gray-400 transition ease-in-out duration-300 mb-5 lg:mb-0">
-                <a href="#">Landing</a>
-              </li>
-
-              <li className="font-semibold text-gray-900 text-lg hover:text-gray-400 transition ease-in-out duration-300 mb-5 lg:mb-0">
-                <a href="#">Pages</a>
-              </li>
-
-              <li className="font-semibold text-gray-900 text-lg hover:text-gray-400 transition ease-in-out duration-300 mb-5 lg:mb-0">
-                <a href="#">Contact</a>
-              </li>
-
-              <li className="font-semibold text-gray-900 text-lg hover:text-gray-400 transition ease-in-out duration-300 mb-5 lg:mb-0">
-                <a href="#">About</a>
-              </li>
-            </ul>
-
-            <button className="px-5 py-3 lg:block border-2 border-[#3D95D1] rounded-lg font-semibold text-[#3D95D1] text-lg hover:bg-[#3D95D1] hover:text-white transition ease-linear duration-500">
-              Request quote
-            </button>
-          </nav> */}
-            <Nav />
+      <div className='mt-32'>
+        <section className='py-10 md:py-16'>
+          <div className='container max-w-screen-xl mx-auto px-4 xl:relative'>
+            <h1 className='font-semibold text-gray-900 text-2xl md:text-4xl text-center leading-normal mb-2'>
+              Our Services
+            </h1>
+            <p className='font-normal text-gray-400 text-lg md:text-xl text-center mb-6'>
+              We&apos;re exceptional at what we do
+            </p>
           </div>
-          {/* <!-- container.// --> */}
         </section>
 
         <section className='py-24'>
           <div className='mx-auto max-w-7xl px-4 sm:px-6 lg:px-8'>
-            <h2 className='text-center font-bold text-3xl min-[400px]:text-4xl text-black mb-8 max-lg:text-center underline underline-offset-8 decoration-blue-500'>
-              Our Services
-            </h2>
-
             <div className='grid grid-cols-1 lg:grid-cols-3 gap-8'>
               <a href='javascript:;' className='max-w-[384px] mx-auto'>
                 <div className='w-full relative max-w-sm aspect-square'>
@@ -174,7 +136,7 @@ export default function Services() {
           </div>
         </section>
 
-        <section className='py-20 bg-white'>
+        <section className='py-20'>
           <div className='mx-auto max-w-7xl px-4 sm:px-6 lg:px-8'>
             <h2 className='font-manrope text-4xl text-center text-gray-900 font-bold mb-14'>
               Our results in numbers
@@ -314,7 +276,6 @@ export default function Services() {
           </button> */}
           </div>
         </section>
-        <Footer />
       </div>
     </PageWrapper>
   );
