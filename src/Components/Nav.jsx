@@ -3,11 +3,8 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import React, { useState } from 'react';
 import Image from 'next/image';
-import logo from '../../public/images/logo.png';
-import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { CiMenuFries } from 'react-icons/ci';
-import { MdOutlineRestaurantMenu } from 'react-icons/md';
 import { IoCloseOutline } from 'react-icons/io5';
 
 const Nav = () => {

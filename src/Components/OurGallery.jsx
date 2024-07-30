@@ -1,6 +1,6 @@
 'use client';
 import React, { useRef } from 'react';
-import Image from 'next/image';
+// import Image from 'next/image';
 // import img1 from '../../../public/images/aboutHero.jpeg';
 // import img2 from '../../../public/images/herotrial.jpeg';
 // import img3 from '../../../public/images/heroo.jpeg';
