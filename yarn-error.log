@@ -1,0 +1,58 @@
+Arguments: 
+  /home/user/.nvm/versions/node/v20.11.0/bin/node /usr/share/yarn/bin/yarn.js
+
+PATH: 
+  /home/user/.console-ninja/.bin:/home/user/.nvm/versions/node/v20.11.0/bin:/home/user/.console-ninja/.bin:/home/user/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  20.11.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  AggregateError
+      at internalConnectMultiple (node:net:1114:18)
+      at internalConnectMultiple (node:net:1177:5)
+      at Timeout.internalConnectMultipleTimeout (node:net:1687:3)
+      at listOnTimeout (node:internal/timers:575:11)
+      at process.processTimers (node:internal/timers:514:7)
+
+npm manifest: 
+  {
+    "name": "pyramid",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+      "dev": "next dev",
+      "build": "next build",
+      "start": "next start",
+      "lint": "next lint"
+    },
+    "dependencies": {
+      "framer-motion": "^11.3.8",
+      "next": "14.2.5",
+      "react": "^18",
+      "react-dom": "^18",
+      "react-icons": "^5.2.1",
+      "react-slick": "^0.30.2",
+      "sharp": "^0.33.4",
+      "slick-carousel": "^1.8.1",
+      "swiper": "^11.1.7"
+    },
+    "devDependencies": {
+      "eslint": "^8",
+      "eslint-config-next": "14.2.5",
+      "postcss": "^8",
+      "tailwindcss": "^3.4.1"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
