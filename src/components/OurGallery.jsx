@@ -105,35 +105,35 @@ export default function OurGallery() {
           <Slider {...settings}>
             <div>
               <img
-                src="/images/aboutHero.jpeg"
+                src="/images/roof1.jpg"
                 alt="Gallery Image 1"
                 className="w-full sm:h-[600px] h-[300px] object-cover hover:opacity-75 transition ease-in-out duration-500"
               />
             </div>
             <div>
               <img
-                src="/images/herotrial.jpeg"
+                src="/images/roof3.jpg"
                 alt="Gallery Image 2"
                 className="w-full sm:h-[600px] h-[300px] object-cover hover:opacity-75 transition ease-in-out duration-500"
               />
             </div>
             <div>
               <img
-                src="/images/heroo.jpeg"
+                src="/images/roof4.jpeg"
                 alt="Gallery Image 3"
                 className="w-full sm:h-[600px] h-[300px] object-cover hover:opacity-75 transition ease-in-out duration-500"
               />
             </div>
             <div>
               <img
-                src="/images/heroo1.jpeg"
+                src="/images/roof5.jpeg"
                 alt="Gallery Image 4"
                 className="w-full sm:h-[600px] h-[300px] object-cover hover:opacity-75 transition ease-in-out duration-500"
               />
             </div>
             <div>
               <img
-                src="/images/hero4.jpeg"
+                src="/images/roof6.jpg"
                 alt="Gallery Image 5"
                 className="w-full sm:h-[600px] h-[300px] object-cover hover:opacity-75 transition ease-in-out duration-500"
               />

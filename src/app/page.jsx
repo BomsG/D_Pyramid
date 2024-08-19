@@ -67,7 +67,7 @@ export default function Home() {
             <div className="flex flex-col xl:flex-row justify-end">
               <div className="hidden xl:block xl:absolute left-0 bottom-0 w-full">
                 <img
-                  src="assets/image/feature-img2.png"
+                  src="images/roof2.jpg"
                   alt="Feature img"
                   className="w-[600px] h-[800px] object-fit"
                 />

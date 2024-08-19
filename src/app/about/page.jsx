@@ -1,18 +1,20 @@
-import React from "react";
+import React, { Suspense } from "react";
 import Nav from "../../components/Nav";
 import PageWrapper from "@/components/PageWrapper";
 import Image from "next/image";
 import hero from "../../../public/images/hero4.jpeg";
-import hero2 from "../../../public/images/hero.jpeg";
-import hero4 from "../../../public/images/hero6.jpeg";
-import heroo from "../../../public/images/heroo.jpeg";
+import hero2 from "../../../public/images/roof9.jpeg";
+import hero4 from "../../../public/images/roof6.jpg";
+import heroo from "../../../public/images/roof10.jpeg";
 import heroo1 from "../../../public/images/heroo1.jpeg";
-import vision from "../../../public/images/aboutHero.jpeg";
+import heroo2 from "../../../public/images/roof11.jpeg";
+import vision from "../../../public/images/roof8.jpeg";
 import bg from "../../../public/images/hero4.jpeg";
 import logo from "../../../public/images/logo2.png";
 import Offer from "@/components/Offer";
 import Footer from "@/components/Footer";
 import Link from "next/link";
+import loading from "./loading";
 
 const page = () => {
   return (
@@ -52,7 +54,7 @@ const page = () => {
         <div className="mx-10 md:mx-[150px]">
           <div className="md:flex justify-center gap-5 my-10 ">
             <div className="w-full">
-              <Image src={hero} alt="hero" className="w-" />
+              <Image src={vision} alt="hero" className="w-" />
               <p className="my-5 text-sm tracking-wider">
                 We offer all required roofing accessories to give you a seamless
                 roof and a complete roofing solution. Having quality roofing
@@ -116,7 +118,11 @@ const page = () => {
               alt="image"
               className="h-[200px] md:h-[400px]"
             />
-            <Image src={hero4} alt="image" className="h-[200px] md:h-[400px]" />
+            <Image
+              src={heroo2}
+              alt="image"
+              className="h-[200px] md:h-[400px]"
+            />
           </div>
           {/* <Offer /> */}
         </div>

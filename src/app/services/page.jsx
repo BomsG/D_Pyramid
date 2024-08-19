@@ -4,7 +4,7 @@ import Simg1 from "../../../public/images/Simg1.jpeg";
 import Simg2 from "../../../public/images/Simg2.jpeg";
 import Simg4 from "../../../public/images/Simg4.jpeg";
 import Simg5 from "../../../public/images/hero.jpeg";
-import Hero from "../../../public/images/hero4.jpeg";
+import Hero from "../../../public/images/roof9.jpeg";
 import PageWrapper from "@/components/PageWrapper";
 
 export default function Services() {
@@ -62,8 +62,8 @@ export default function Services() {
               <div className="lg:pr-24 flex">
                 <div className="data w-full">
                   <img
-                    src="https://pagedone.io/asset/uploads/1702034785.png"
-                    alt="About Us tailwind page"
+                    src="images/roof9.jpeg"
+                    alt="About Us "
                     className="block lg:hidden mb-9 mx-auto"
                   />
                   <h2 className="font-manrope font-bold text-4xl lg:text-5xl text-black mb-9 max-lg:text-center underline underline-offset-8 decoration-blue-500">
