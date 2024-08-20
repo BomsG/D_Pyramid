@@ -95,7 +95,7 @@ export default function OurGallery() {
         </section>
 
         <motion.div
-          className="relative" // Ensure container is positioned for arrow positioning
+          className="relative " // Ensure container is positioned for arrow positioning
           ref={ref}
           style={{
             scale: scaleProgress,

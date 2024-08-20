@@ -234,23 +234,23 @@ export default function Services() {
               </div>
               <div className="block">
                 <img
-                  src="https://pagedone.io/asset/uploads/1707713007.png"
+                  src="images/heroo.jpeg"
                   alt="Building structure image"
-                  className="w-full rounded-lg "
+                  className="w-full rounded-lg h-[400px]"
                 />
               </div>
               <div className="block">
                 <img
-                  src="https://pagedone.io/asset/uploads/1707713018.png"
+                  src="images/hero3.jpeg"
                   alt="Building structure image"
-                  className="w-full rounded-lg"
+                  className="w-full rounded-lg h-[400px]"
                 />
               </div>
               <div className="block">
                 <img
-                  src="https://pagedone.io/asset/uploads/1707713032.png"
+                  src="images/roof15.jpeg"
                   alt="Building structure image"
-                  className="w-full rounded-lg"
+                  className="w-full rounded-lg h-[400px]"
                 />
               </div>
               <div
@@ -271,9 +271,9 @@ export default function Services() {
               </div>
               <div className="block">
                 <img
-                  src="	https://pagedone.io/asset/uploads/1707713055.png"
+                  src="	images/roof5.jpeg"
                   alt="Building structure image"
-                  className="w-full rounded-lg"
+                  className=" w-full rounded-lg h-[400px]"
                 />
               </div>
               <div
