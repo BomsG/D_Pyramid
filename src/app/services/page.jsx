@@ -224,11 +224,11 @@ export default function Services() {
               >
                 <div className="bg-[#0000006c] px-5 py-3 ">
                   <h6 className="font-medium text-xl leading-8 text-white mb-4">
-                    Architecture Designer
+                    Energy Efficiency Through Modern Roofing
                   </h6>
                   <p className="text-base font-normal text-white/70">
-                    where knowledge meets innovation, and success is sculpted
-                    through a blend of skill and vision.
+                    Investing in high-quality roofing materials and proper
+                    insulation can significantly reduce energy costs.
                   </p>
                 </div>
               </div>
@@ -261,11 +261,11 @@ export default function Services() {
               >
                 <div className="bg-[#0000006c] px-5 py-3 ">
                   <h6 className="font-medium text-xl leading-8 text-white mb-4">
-                    Interior Designer
+                    Roof Maintenance Extends Lifespan
                   </h6>
                   <p className="text-base font-normal text-white/70">
-                    Crafting exceptional interiors, where aesthetics meet
-                    functionality for spaces that inspire and elevate.
+                    Regular roof maintenance is essential to prevent minor
+                    issues from becoming major problems.
                   </p>
                 </div>
               </div>
@@ -284,11 +284,12 @@ export default function Services() {
               >
                 <div className="bg-[#0000006c] px-5 py-3 ">
                   <h6 className="font-medium text-xl leading-8 text-white mb-4">
-                    Business Building
+                    Curb Appeal and Property Value
                   </h6>
                   <p className="text-base font-normal text-white/70">
-                    Architecting business success through innovation,
-                    resilience, and strategic leadership.
+                    A well-maintained and aesthetically pleasing roof boosts
+                    your home&apos;s curb appeal and increases its property
+                    value.
                   </p>
                 </div>
               </div>
